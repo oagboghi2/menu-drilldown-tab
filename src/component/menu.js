@@ -33,11 +33,11 @@ export default class Menu extends Component {
           {this.state.toggle ? (
             <div>
               {this.props.subMenu !== undefined ? (
-                <SubMenu subMenu={this.props.subMenu} />
-              ) : (
-                //<div>True Test</div>
-                <SubMenu subMenu={0} />
-              )}
+                <div>
+                  <li>{this.props.subMenu[1].title}</li>
+                  <SubMenu subMenu={this.props.subMenu} />
+                </div>
+              ) : null}
             </div>
           ) : null}
         </li>

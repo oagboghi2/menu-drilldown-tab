@@ -43,13 +43,9 @@ export default class App extends Component {
     if (data[0].length <= 1) {
       alert("tested 1");
     }
-    // if (Object.keys(data[i]) <= 1) {
-    //   alert("tested 1");
-    // }
   };
 
   render() {
-    //console.log("state", Object.keys(this.state[1]));
     return (
       <div className="App">
         {this.state.map((e, index) => (
